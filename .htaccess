@@ -1,0 +1,22 @@
+##Options -Indexes
+##Options -MultiViews
+##Options +FollowSymLinks
+
+##RewriteEngine On
+
+##RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+##RewriteRule ^(.*)$ https://%1%{REQUEST_URI} [R=301,QSA,NC,L]
+
+##RewriteCond %{HTTPS} !=on
+##RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+##RewriteRule ^(s4pafe5ujaKe5ufreju4enamaf4a8huw)($|/) - [L]
+##RewriteRule ^access/(.*)$ /s4pafe5ujaKe5ufreju4enamaf4a8huw/$1 [R=301,NC,L]
+
+##Header add Access-Control-Allow-Origin "*" 
+
+##<Files ~ "^.*\.([Hh][Tt][Aa])">
+##    order allow,deny
+##    deny from all
+##    satisfy all
+##</Files>
